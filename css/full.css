@@ -1,0 +1,66 @@
+/*!
+ * Start Bootstrap - Full (https://startbootstrap.com/template-overviews/full)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full/blob/master/LICENSE)
+ */
+
+body {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+h1 {
+	font-size: 92px;
+	font-weight: 600;
+	color: #002875;
+}
+
+h2 {
+	font-weight: 600;
+	color: #002875;
+}
+
+nav {
+	background-color: #e3f2fd;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.backdrop {
+	background-color: rgba(256, 256, 256, 0.5);
+	padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.center-v {
+	margin-top: 138px;
+	text-align: center;
+}
+
+.icons {
+	width: 50px;
+}
+
+#homeBody {
+	background: url('../imgs/surveyor.jpg') no-repeat center center fixed;
+}
+
+#engBody {
+	background: url('../imgs/engineerMaps.jpg') no-repeat center center fixed;
+}
+
+#surBody {
+	background: url('../imgs/surveying.jpg') no-repeat center center fixed;
+}
+
+#graBody {
+	background: url('../imgs/staking.jpg') no-repeat center center fixed;
+}
