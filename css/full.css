@@ -41,8 +41,11 @@ li {
 }
 
 .center-v {
-	margin-top: 138px;
 	text-align: center;
+}
+
+.headerTopMargin {
+	margin-top: 138px;
 }
 
 .icons {
@@ -64,3 +67,51 @@ li {
 #graBody {
 	background: url('../imgs/staking.jpg') no-repeat center center fixed;
 }
+
+#aboutBody {
+	background: url('../imgs/engineer2.jpg') no-repeat center center fixed;
+}
+
+#faqBody {
+	background: url('../imgs/surveyor2.jpg') no-repeat center center fixed;
+}
+
+#contactBody {
+	background: url('../imgs/engineer.jpg') no-repeat center center fixed;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px)
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.question {
+	vertical-align: text-top;
+}
+.question:hover {
+	color: #002875;
+}
+
+.answer:not(:active) {
+	animation: fadeOut 2s;
+}
+
+.answer:active {
+	
+}
+
