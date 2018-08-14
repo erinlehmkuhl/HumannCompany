@@ -2,6 +2,11 @@
  * Start Bootstrap - Full (https://startbootstrap.com/template-overviews/full)
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full/blob/master/LICENSE)
+
+  * BLUE          #002875;
+  * LIGHT BLUE :  #e3f2fd;
+  * GRAY          gray
+  * WHITE         rgba(256, 256, 256, 0.8)
  */
 
 body {
@@ -12,9 +17,9 @@ body {
 }
 
 h1 {
-	font-size: 77px;
+	font-size: 65px;
 	font-weight: 600;
-	color: #002875;
+	color: white;
 }
 
 h2 {
@@ -55,6 +60,7 @@ p {
 	background-color: rgba(256, 256, 256, 0.5);
 	padding-top: 2%;
     padding-bottom: 2%;
+    border-radius: 7px;
 }
 
 .center-v {
@@ -70,7 +76,7 @@ p {
 }
 
 #homeBody {
-	background: url('../imgs/survey.jpg') no-repeat center center fixed;
+	background: url('../imgs/desk.jpg') no-repeat center center fixed;
 	background-size: cover;
 }
 
@@ -104,38 +110,78 @@ p {
 	background-size: cover;
 }
 
-@keyframes slideIn {
-  0% {
-    transform: translateX(-25px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0px)
-    opacity: 1;
-  }
+
+
+/* -------------- collapse ----------------- */
+/* Credit: https://alligator.io/css/collapsible/ */
+
+input[type='checkbox'] {
+  display: none;
 }
 
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+.lbl-toggle {
+  display: block;
+
+  font-weight: bold;
+  font-size: larger;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 1rem;
+
+  color: #002875;
+  background: rgba(256, 256, 256, 0.8);
+
+  cursor: pointer;
+
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
 }
 
-.question {
-	vertical-align: text-top;
-}
-.question:hover {
-	color: #002875;
+.lbl-toggle:hover {
+  color: gray;
 }
 
-.answer:not(:active) {
-	animation: fadeOut 2s;
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .2s ease-out;
 }
 
-.answer:active {
-	
+.collapsible-content .content-inner {
+  background: rgba(256, 256, 256, 1);
+  border-bottom: 1px solid white;
+
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .5rem 1rem;
 }
 
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 1050px;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
