@@ -8,6 +8,14 @@
   * WHITE         rgba(256, 256, 256, 0.8)
  */
 
+
+img {
+  margin-top: -14px !important;
+  max-height: 48px;
+  padding-left: 15px;
+}
+
+
 body {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -76,13 +84,10 @@ h3 {
 .backdrop-darker {
 	background-color: rgba(256, 256, 256, 0.1);
 	padding-top: 2%;
-    padding-bottom: 2%;
-    border-radius: 7px;
-    /*border: 1px;*/
-    border-color: rgba(256, 256, 256, 1);
-    /*border-style: solid;*/
-/*    border: 1px solid #002875;*/
-    margin-top: 7%;
+  padding-bottom: 2%;
+  border-radius: 7px;
+  border-color: rgba(256, 256, 256, 1);
+  margin-top: 7%;
 }
 
 .center-v {
@@ -133,8 +138,13 @@ h3 {
 }
 
 .navbar-text {
-	margin: 0;
+	margin: 0px;
 }
+
+
+
+
+
 
 /* -------------- collapse ----------------- */
 /* Credit: https://alligator.io/css/collapsible/ */
