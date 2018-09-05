@@ -3,7 +3,7 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full/blob/master/LICENSE)
 
-  * BLUE          #002875; or rgba(0, 40, 117, 1)
+  * BLUE          #001a4c; or rgba(0, 40, 117, 1)
   * GRAY          gray
   * WHITE         rgba(256, 256, 256, 0.8)
  */
@@ -31,7 +31,7 @@ h1 {
 
 h2 {
 	font-weight: 600;
-	color: #002875;
+	color: #001a4c;
 	margin-top: 10px;
 }
 
@@ -98,9 +98,6 @@ h3 {
 	margin-top: 4em;
 }
 
-.icons {
-	width: 50px;
-}
 
 #homeBody {
 	background: url('../imgs/blueprintsDarkDesk.jpg') no-repeat center center fixed;
@@ -137,6 +134,13 @@ h3 {
 	background-size: cover;
 }
 
+
+#portfolioBody {
+  background: url('../imgs/surveyor2.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
 .navbar-text {
 	margin: 0px;
 }
@@ -163,7 +167,7 @@ input[type='checkbox'] {
 
   padding: 1rem;
 
-  color: #002875;
+  color: #001a4c;
   background: rgba(256, 256, 256, 0.8);
 
   cursor: pointer;
@@ -208,7 +212,7 @@ input[type='checkbox'] {
 }
 
 .toggle:checked + .lbl-toggle + .collapsible-content {
-  max-height: 1550px;
+  max-height: 800px;
 }
 
 .toggle:checked + .lbl-toggle::before {
@@ -222,7 +226,12 @@ input[type='checkbox'] {
 
 
 @media (max-width: 767px) {
-	h3, h1 {
-		color: #002875;
+	h1 {
+		-webkit-text-stroke: 1px #001a4c;
 	}
+  h3 {
+    font-weight: bolder;
+    color: #001a4c;
+    font-size: large;
+  }
 }
