@@ -9,12 +9,6 @@
  */
 
 
-img {
-  margin-top: -14px !important;
-  max-height: 48px;
-  padding-left: 15px;
-}
-
 
 body {
 	-webkit-background-size: cover;
@@ -35,8 +29,15 @@ h2 {
 	margin-top: 10px;
 }
 
+
 nav {
 	background-color: rgba(256, 256, 256, 0.8);
+}
+
+.sm-logo {
+  margin-top: -14px !important;
+  max-height: 48px;
+  padding-left: 15px !important;;
 }
 
 .navbar-nav {
@@ -45,6 +46,11 @@ nav {
 
 .navbar {
 	border-radius: 0px;
+}
+
+.footer-links {
+color:white;
+
 }
 
 a {
@@ -88,6 +94,11 @@ h3 {
   border-radius: 7px;
   border-color: rgba(256, 256, 256, 1);
   margin-top: 7%;
+}
+
+.port-img {
+  width:100%;
+  border-radius: 7px;
 }
 
 .center-v {
@@ -225,6 +236,7 @@ input[type='checkbox'] {
 }
 
 
+
 @media (max-width: 767px) {
 	h1 {
 		-webkit-text-stroke: 1px #001a4c;
@@ -235,3 +247,8 @@ input[type='checkbox'] {
     font-size: large;
   }
 }
+
+
+
+
+
