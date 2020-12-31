@@ -8,8 +8,9 @@
 	<link rel="stylesheet" href="css/full.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="js/carousel.js"></script>
 	</head>
-	<body id="portfolioBody">
+	<body>
 		<nav class="navbar navbar-inverse">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -18,17 +19,20 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span> 
 					</button>
-					<a class="sm-logo navbar-brand" href="index.html"><img alt='logo' style="max-width:100px; margin-top: -7px;"
+					<a class="navbar-brand sm-logo" href="index.html"><img alt='logo' style="max-width:100px; margin-top: -7px;"
              src="imgs/logo.png"></a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li class="nav-item navbar-text"><a class="nav-link" href="surveying.html">Surveying</a></li>
-						<li class="nav-item navbar-text"><a class="nav-link" href="engineering.html">Engineering</a></li>
-						<li class="nav-item navbar-text"><a class="nav-link" href="grading.html">Construction Staking</a></li>
-						<li class="nav-item navbar-text"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
 						<li class="nav-item navbar-text"><a class="nav-link" href="about.html">About Us</a></li>
-						<li class="nav-item navbar-text"><a class="nav-link" href="faq.html">FAQs</a></li>
+						<li class="nav-item navbar-text dropdown">
+							<a class="nav-link dropdown-toggle" href="services.html" data-toggle="dropdown">Services</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item navbar-text"><a class="nav-link" href="surveying.html">Land Surveying</a></li>
+									<li class="nav-item navbar-text"><a class="nav-link" href="engineering.html">Civil Engineering</a></li>
+							</ul>
+						</li>
+						<li class="nav-item navbar-text"><a class="nav-link" href="portfolio.html">Projects</a></li>
 						<li class="nav-item navbar-text"><a class="nav-link" href="contact.html">Contact</a></li>
 					</ul>
 				</div>
@@ -36,312 +40,34 @@
 		</nav>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-2"></div>
-				<div class="col-sm-8">
 
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-10 backdrop-darker">
-							<h1 class="center-v">SERVICES</h1>
-							<p>Below is a list of services that we provide in each disipline with examples from previous clients.</p>
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner active">
+						<div class="carousel-item">
+							<img class="d-block w-100" src="imgs/portfolio/image001.png" alt="First slide">
 						</div>
-						<div class="col-sm-1"></div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="imgs/portfolio/image002.png" alt="Second slide">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="imgs/portfolio/image003.png" alt="Third slide">
+						</div>
 					</div>
-
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-10 backdrop-darker">
-							<h2 class="center-v">SURVEYING</h2>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<img class="port-img" alt="" src="imgs/portfolio/Wente01.JPG">
-							<p> Topographic Survey Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<img class="port-img" alt="" src="imgs/portfolio/Wente02.JPG">
-							<p> Building Location Survey Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<img class="port-img" alt="" src="imgs/portfolio/Wente03.JPG">
-							<p> ALTA Survey Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<img class="port-img" alt="" src="imgs/portfolio/autocad1.png">
-							<p> FEMA Elevation Certificates Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<img class="port-img" alt="" src="imgs/portfolio/dtm1.png">
-							<p> Setback / Building Permit Certificate Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<img class="port-img" alt="" src="imgs/portfolio/Merrill01.JPG">
-							<p> Forensic and surveys relating disputes Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<img class="port-img" alt="" src="imgs/portfolio/Merrill02.JPG">
-							<p> Boundary Staking Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<img class="port-img" alt="" src="imgs/portfolio/Merrill03.JPG">
-							<p> Record of Surveys Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<img class="port-img" alt="" src="imgs/portfolio/DelawarePacificApartments.png">
-							<p> Corner Records Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<img class="port-img" alt="" src="imgs/portfolio/StonefireApartments.png">
-							<p> Lot Line Adjustments Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<img class="port-img" alt="" src="imgs/portfolio/MerrillGardens.png">
-							<p> Lot Mergers Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<img class="port-img" alt="" src="imgs/portfolio/Wente01.JPG">
-							<p> Easement and Deed Preparation Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-10 backdrop-darker">
-							<h2 class="center-v">ENGINEERING</h2>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<img class="port-img" alt="" src="imgs/portfolio/diamondlakedam2-1024x607.png">
-							<p> SWPPP Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<img class="port-img" alt="" src="imgs/portfolio/autocad1.png">
-							<p> C.3 Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<p> QSD Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<p> QSP Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-					
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-10 backdrop-darker">
-							<h2 class="center-v">CONSTRUCTION</h2>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<p> Storm Drainage Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdro port-thumb">
-							<p> Grading Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<p> Roadways Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<p> Utilities Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<p> Subdivisions Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4">
-							<p> </p>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-10 backdrop-darker">
-							<h2 class="center-v">STAKING</h2>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<p> Layout for Buildings, Parking Lots and Roadway Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<p> Pier, Grade Beam, Pilings, Columns and Podiums Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<p> Rough and Finished Grading Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<p> Utility Staking Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<p> Pipeline Layout Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<p> As-built Construction Surveys Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-10 backdrop-darker">
-							<h2 class="center-v">PLANS</h2>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<p> Storm Drainage and Related Services Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<p> Grading Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<p> Roadways Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<p> Utilities Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4 backdrop port-thumb">
-							<p> Subdivisions Image</p>
-						</div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-4">
-							<p> </p>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-
-
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					</a>
 				</div>
-				<div class="col-sm-2"></div>
+
 			</div>
 		</div>
 	</body>
