@@ -36,13 +36,13 @@ h3 {
 a {
   text-decoration: none;
     color: black;
-    font-size: large;
+    /*font-size: large;*/
 }
 
 a:hover{
     text-decoration: none;
-    color: gray;
-    font-size: large;
+    color: #337ab7;
+    /*font-size: large;*/
 }
 
 li {
@@ -50,7 +50,7 @@ li {
 }
 
 p {
-  font-size: large;
+  font-size: medium;
 }
 
 
@@ -89,6 +89,9 @@ nav {
 /* -------------- general styles ----------------- */
 
 
+.contact_footer{
+  font-size: small;
+}
 
 .center-v {
   text-align: center;
@@ -98,8 +101,9 @@ nav {
   margin-top: 4em;
 }
 
-
-
+li.liBullet {
+  list-style: disc;
+}
 
 .backdrop {
 	background-color: rgba(256, 256, 256, 0.7);
