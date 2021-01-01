@@ -156,20 +156,12 @@ li.liBullet {
 	background-size: cover;
 }
 
-#graBody {
-	background: url('../imgs/staking.jpg') no-repeat center center fixed;
-	background-size: cover;
-}
 
 #aboutBody {
 	background: url('../imgs/engineer2.jpg') no-repeat center center fixed;
 	background-size: cover;
 }
 
-#faqBody {
-	background: url('../imgs/stake.jpg') no-repeat center center fixed;
-	background-size: cover;
-}
 
 #contactBody {
 	background: url('../imgs/surveyor2.jpg') no-repeat center center fixed;
@@ -178,8 +170,9 @@ li.liBullet {
 
 
 #portfolioBody {
-  background: url('../imgs/excavator.jpg') no-repeat center center fixed;
-  background-size: cover;
+/*  background: url('../imgs/excavator.jpg') no-repeat center center fixed;
+  background-size: cover;*/
+  background: #7d6c3b;
 }
 
 
@@ -279,6 +272,10 @@ input[type='checkbox'] {
     color: #001a4c;
     font-size: large;
   }
+  .slick-prev, .slick-next {
+    visibility: hidden;
+  }
+
 }
 
 @media (max-width: 977px) {
@@ -316,4 +313,19 @@ input[type='checkbox'] {
   .collapse.in{
       display:block !important;
   }
+
+}
+
+
+/* -------------- carousel ----------------- */
+
+.port-image {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 100%;
+}
+
+.slick-prev, .slick-next {
+  top: 33%;
 }
