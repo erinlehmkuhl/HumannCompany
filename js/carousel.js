@@ -1,5 +1,8 @@
 
+$(document).ready(function(){
+  $('#first_carousel').slick({
+    autoplay: true,
+    dots: true
+  });
+});
 
-$('#carouselExampleIndicators').on('slide.bs.carousel', function () {
-  .carousel('cycle')
-})
