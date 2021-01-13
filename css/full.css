@@ -106,43 +106,40 @@ li.liBullet {
 }
 
 .backdrop {
-	background-color: rgba(256, 256, 256, 0.7);
-	padding-top: 2%;
-    padding-bottom: 2%;
-    border-radius: 7px;
-    border: 1px;
-    border-color: rgba(256, 256, 256, 1);
-    border-style: solid;
+  background-color: rgba(256, 256, 256, 0.7);
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 2px;
+  border: 1px;
+  border-color: rgba(256, 256, 256, 1);
+  border-style: solid;
 }
 
 .backdrop-darker {
-	background-color: rgba(256, 256, 256, 0.1);
-	padding-top: 2%;
+  /*background-color: rgba(256, 256, 256, 0.1);*/
+  padding-top: 2%;
   padding-bottom: 2%;
-  border-radius: 7px;
-  border-color: rgba(256, 256, 256, 1);
-  margin-top: 7%;
+  border-radius: 2px;
+  /*border-color: rgba(256, 256, 256, 1);*/
+  /*margin-top: 7%;*/
 }
 
-/* -------------- portfolio page ----------------- */
-
-.port-img {
-  width:100%;
-  border-radius: 7px;
+.backdrop-darker2 {
+  /*background-color: rgba(256, 256, 256, 0.1);*/
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 2px;
+  /*border-color: rgba(256, 256, 256, 1);*/
+  /*margin-top: 7%;*/
 }
-.port-thumb {
-  margin-bottom: 3%;
-}
-
-
-
 
 
 /* -------------- bg images ----------------- */
 
 
 #homeBody {
-	background: url('../imgs/blueprintsDarkDesk.jpg') no-repeat center center fixed;
+	background: url('../imgs/rick_imgs/istockphoto-1093110112-612x612.jpg') no-repeat center center fixed;
+	/*background: url('../imgs/dreamstime_wooden-boardwalk-tidal-marshes-alviso-don-edwards-san-francisco-bay-national-wildlife-refuge-jose-california-sunset-134465217.jpg') no-repeat center center fixed;*/
 	background-size: cover;
 }
 
@@ -156,22 +153,20 @@ li.liBullet {
 	background-size: cover;
 }
 
-
 #aboutBody {
 	background: url('../imgs/engineer2.jpg') no-repeat center center fixed;
 	background-size: cover;
 }
-
 
 #contactBody {
 	background: url('../imgs/surveyor2.jpg') no-repeat center center fixed;
 	background-size: cover;
 }
 
-
 #portfolioBody {
-  background: url('../imgs/blueprintsHardHat_faded.jpg') no-repeat center center fixed;
-  background-size: cover;
+ /* background: url('../imgs/rick_imgs/istockphoto-148125427-612x612.jpg') no-repeat center center fixed;
+  background-size: cover;*/
+  background-image: linear-gradient(dimgray, black); 
 }
 
 
@@ -204,7 +199,7 @@ input[type='checkbox'] {
 
   cursor: pointer;
 
-  border-radius: 7px;
+  border-radius: 2px;
   transition: all 0.25s ease-out;
 }
 
