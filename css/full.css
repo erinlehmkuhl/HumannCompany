@@ -124,11 +124,11 @@ li.liBullet {
 }
 
 .backdrop-contact {
-  background-color: rgba(256, 256, 256, 0.1);
+  /*background-color: rgba(256, 256, 256, 0.1);*/
   padding-top: 2%;
   padding-bottom: 2%;
   border-radius: 2px;
-  border-color: rgba(256, 256, 256, 1);
+  /*border-color: rgba(256, 256, 256, 1);*/
   margin-top: 27%;
 }
 
