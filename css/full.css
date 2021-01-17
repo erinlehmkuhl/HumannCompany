@@ -52,7 +52,7 @@ li {
 }
 
 p {
-  font-size: medium;
+  font-size: large;
 }
 
 
@@ -85,6 +85,7 @@ nav {
 
 .navbar-text {
   margin: 0px;
+  font-size: large;
 }
 
 .navbar-tagline {
