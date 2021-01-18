@@ -99,7 +99,7 @@ nav {
 
 
 .contact_footer{
-  font-size: small;
+  font-size: large;
 }
 
 .center-v {
@@ -117,7 +117,7 @@ li.liBullet {
 .backdrop {
   background-color: rgba(256, 256, 256, 0.7);
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 10%;
   border-radius: 2px;
   border: 1px;
   border-color: rgba(256, 256, 256, 1);
@@ -125,11 +125,11 @@ li.liBullet {
 }
 
 .backdrop-contact {
-  /*background-color: rgba(256, 256, 256, 0.1);*/
+  background-color: rgba(256, 256, 256, 0.07);
   padding-top: 2%;
   padding-bottom: 2%;
   border-radius: 2px;
-  /*border-color: rgba(256, 256, 256, 1);*/
+  border-color: rgba(256, 256, 256, 1);
   margin-top: 27%;
 }
 
@@ -336,10 +336,13 @@ input[type='checkbox'] {
 /* -------------- carousel ----------------- */
 
 .port-image {
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
 }
 
 .slick-prev, .slick-next {
