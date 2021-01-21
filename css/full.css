@@ -61,24 +61,48 @@ p {
 
 /* -------------- examples page ----------------- */
 
+#quad1 {
+  background: url('../imgs/iStock-1136139155.jpg');
+  background-size: cover;
+}
+#quad2{
+  background: url('../imgs/iStock-155419645.jpg');
+  background-size: cover;
+}
+#quad3 {
+  background: url('../imgs/iStock-175211722.jpg');
+  background-size: cover;
+}
+#quad4{
+  background: url('../imgs/iStock-501292022.jpg');
+  background-size: cover;
+}
+
 .quad{
   width:50%;
   height:100%;
   float:left;
-  background: url('http://placekitten.com/400/400');
-  background-size: cover;
 }
 
-.quad:hover {
-  background: lightgray;
-}
 
 .quad-info {
   padding: 10%;
-  /*visibility: hidden;*/
+  margin-top: 10%
 }
-.quad-info:hover {
-  /*visibility: revert;*/
+
+/*.text{
+  color: white;
+}*/
+
+.overlay {
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255,255,255,.8);
+  border-radius: 7px
+}
+
+.quad:hover .overlay {
+  opacity: 1;
 }
 
 
