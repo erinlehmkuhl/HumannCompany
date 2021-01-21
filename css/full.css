@@ -10,7 +10,7 @@
 
 
 
-html, body {
+html, body{
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -25,6 +25,7 @@ h1 {
   font-size: 65px;
   font-weight: 600;
   color: white;
+  margin-left: 1em;
 }
 
 h2 {
@@ -64,7 +65,7 @@ p {
   width:50%;
   height:100%;
   float:left;
-  background: url('https://via.placeholder.com/500');
+  background: url('http://placekitten.com/400/400');
   background-size: cover;
 }
 
@@ -82,7 +83,7 @@ p {
 
 
 .mother-quad{
-  height:50%;
+  height:46%;
   width:100%;
 }
   
@@ -321,6 +322,7 @@ input[type='checkbox'] {
 @media (max-width: 767px) {
   h1 {
     -webkit-text-stroke: 1px #001a4c;
+    margin-left: 0em;
   }
   h3 {
     font-weight: bolder;
