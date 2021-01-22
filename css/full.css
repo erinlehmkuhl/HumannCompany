@@ -86,19 +86,21 @@ p {
 
 
 .quad-info {
-  padding: 10%;
+  width: 50%
+  height:100%;
+  /*padding: 10%;*/
   margin-top: 10%
 }
 
-/*.text{
+.text{
   color: white;
-}*/
+}
 
 .overlay {
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(255,255,255,.8);
-  border-radius: 7px
+  background-color: rgba(255,255,255,.75);
+  border-radius: 3px
 }
 
 .quad:hover .overlay {
@@ -191,7 +193,7 @@ li.liBullet {
 }
 
 .backdrop_longer {
-  background-color: rgba(256, 256, 256, 0.7);
+  background-color: rgba(256, 256, 256, 0.75);
   padding-top: 4%;
   padding-bottom: 10%;
   border-radius: 2px;
@@ -214,12 +216,12 @@ li.liBullet {
 }
 
 .backdrop-header_about {
-  background-color: rgba(256, 256, 256, 0.1);
+  background-color: rgba(256, 256, 256, 0.45);
   padding-top: 2%;
   padding-bottom: 2%;
   border-radius: 2px;
   border-color: rgba(256, 256, 256, 1);
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 .backdrop-header {
@@ -241,17 +243,17 @@ li.liBullet {
 }
 
 #engBody {
-  background: url('../imgs/iStock-859199252.jpg') no-repeat center center fixed;
+  background: url('../imgs/tmp/istockphoto-502209608-2048x2048.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
 #surBody {
-  background: url('../imgs/iStock-467718716_desat.jpg') no-repeat center center fixed;
+  background: url('../imgs/tmp/istockphoto-666053612-2048x2048.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
 #aboutBody {
-  background: url('../imgs/iStock-92013164_cropped.jpg') no-repeat center center fixed;
+  background: url('../imgs/iStock-157197162.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
