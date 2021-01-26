@@ -19,6 +19,7 @@ html, body{
   margin:0;
   height:100%;
   min-height:100%;
+  background-color: black;
 }
 
 h1 {
@@ -212,7 +213,8 @@ li.liBullet {
   padding-bottom: 2%;
   border-radius: 2px;
   border-color: rgba(256, 256, 256, 1);
-  margin-top: 45%;
+  /*margin-top: 45%;*/
+  margin-top: 15%;
 }
 
 .backdrop-header_about {
@@ -232,6 +234,10 @@ li.liBullet {
   border-color: rgba(256, 256, 256, 1);
 }
 
+.certificates {
+  width: 85px;
+  margin-top: 62px;
+}
 
 
 /* -------------- bg images ----------------- */
@@ -260,6 +266,10 @@ li.liBullet {
 #contactBody {
   background: url('../imgs/iStock-694028302_cropped.jpg') no-repeat center center fixed;
   background-size: cover;
+}
+
+#FAQsBody {
+  /*background: black;*/
 }
 
 
@@ -345,26 +355,7 @@ input[type='checkbox'] {
 /* -------------- responsive ----------------- */
 
 
-@media (max-width: 767px) {
-  h1 {
-    -webkit-text-stroke: 1px #001a4c;
-    margin-left: 0em;
-  }
-  h3 {
-    font-weight: bolder;
-    /*color: #001a4c;*/
-    font-size: large;
-  }
-  .slick-prev, .slick-next {
-    visibility: hidden;
-  }
-  .navbar-tagline {
-    display: none;
-  }
-
-}
-
-@media (max-width: 977px) {
+@media (max-width: 1040px) {
   .navbar-header {
       float: none;
   }
@@ -399,7 +390,20 @@ input[type='checkbox'] {
   .collapse.in{
       display:block !important;
   }
-
 }
 
+@media (max-width: 767px) {
+  h1 {
+    -webkit-text-stroke: 1px #001a4c;
+    margin-left: 0em;
+  }
+  h3 {
+    font-weight: bolder;
+    font-size: large;
+  }
+}
 
+@media (max-width: 615px) {
+  .navbar-tagline {
+    display: none;
+  }
