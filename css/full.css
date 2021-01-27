@@ -40,8 +40,8 @@ h3 {
 
 a {
   text-decoration: none;
-    color: black;
-    /*font-size: large;*/
+  color: black;
+  font-size: medium;
 }
 
 a:hover{
@@ -63,19 +63,19 @@ p {
 /* -------------- examples page ----------------- */
 
 #quad1 {
-  background: url('../imgs/iStock-1136139155.jpg');
+  background: url('../imgs/example_multi-use.jpg');
   background-size: cover;
 }
 #quad2{
-  background: url('../imgs/iStock-155419645.jpg');
+  background: url('../imgs/example_multi-family.jpg');
   background-size: cover;
 }
 #quad3 {
-  background: url('../imgs/iStock-175211722.jpg');
+  background: url('../imgs/example_single.jpg');
   background-size: cover;
 }
 #quad4{
-  background: url('../imgs/iStock-501292022.jpg');
+  background: url('../imgs/example_tract.jpg');
   background-size: cover;
 }
 
@@ -124,10 +124,6 @@ p {
   }
 
 
-.quad-photo {
-  background: url('https://via.placeholder.com/500') no-repeat center center fixed;
-  background-size: cover;
-}
 
 /* -------------- navigation bar ----------------- */
 
@@ -249,17 +245,17 @@ li.liBullet {
 }
 
 #engBody {
-  background: url('../imgs/tmp/istockphoto-502209608-2048x2048.jpg') no-repeat center center fixed;
+  background: url('../imgs/engineer.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
 #surBody {
-  background: url('../imgs/tmp/istockphoto-666053612-2048x2048.jpg') no-repeat center center fixed;
+  background: url('../imgs/survey.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
 #aboutBody {
-  background: url('../imgs/iStock-157197162.jpg') no-repeat center center fixed;
+  background: url('../imgs/about.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
