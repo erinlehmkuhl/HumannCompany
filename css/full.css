@@ -19,7 +19,8 @@ html, body{
   margin:0;
   height:100%;
   min-height:100%;
-  background-color: black;
+  /*background-color: black;*/
+  background-image: linear-gradient(#333, black);
 }
 
 h1 {
@@ -235,6 +236,13 @@ li.liBullet {
   margin-top: 62px;
 }
 
+.panel-heading {
+  background-color: #b1b0b0 !important;
+}
+
+.panel-title {
+  color: black;
+  }
 
 /* -------------- bg images ----------------- */
 
@@ -265,7 +273,7 @@ li.liBullet {
 }
 
 #FAQsBody {
-  /*background: black;*/
+  /*background: black; this is done in the BODY*/
 }
 
 
